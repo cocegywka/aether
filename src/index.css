@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #95ccff;
+  --color-surface-dim: #09090b;
+  --color-surface: #131315;
+  --color-surface-bright: #27272a;
+  
+  --color-on-surface: #e5e1e4;
+  --color-on-surface-variant: #bfc7d2;
+  
+  --font-sans: "Hanken Grotesk", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+  
+  --spacing-container: 2.5rem;
+  --spacing-section: 8rem;
+  
+  --radius-sm: 0.125rem;
+  --radius-md: 0.25rem;
+  --radius-lg: 0.5rem;
+  --radius-xl: 0.75rem;
+  --radius-full: 9999px;
+
+  /* Custom cubic beziers for premium motion */
+  --ease-spring: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  --ease-cinematic: cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+body {
+  background-color: var(--color-surface);
+  color: var(--color-on-surface);
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Base custom classes for high-end look */
+@layer utilities {
+  .liquid-glass {
+    background: rgba(9, 9, 11, 0.6);
+    backdrop-filter: blur(40px) saturate(180%);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-left: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.02);
+    border-right: 1px solid rgba(255, 255, 255, 0.02);
+    box-shadow: inset 0 2px 4px rgba(255, 255, 255, 0.05);
+  }
+
+  .glow-primary {
+    box-shadow: 0 0 20px rgba(149, 204, 255, 0.3);
+  }
+  
+  .glow-primary-hover:hover {
+    box-shadow: 0 0 35px rgba(149, 204, 255, 0.5);
+  }
+  
+  .magnetic-hover {
+    transition: transform 0.3s var(--ease-spring);
+  }
+}
+
+/* Refractive elements */
+.status-orb {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: var(--color-primary);
+  animation: breathe 3s infinite ease-in-out;
+}
+
+@keyframes breathe {
+  0%, 100% {
+      opacity: 0.5;
+      transform: scale(0.9);
+      box-shadow: 0 0 8px rgba(149, 204, 255, 0.4);
+  } 50% {
+      opacity: 1;
+      transform: scale(1.1);
+      box-shadow: 0 0 12px rgba(149, 204, 255, 0.8);
+  }
+}
