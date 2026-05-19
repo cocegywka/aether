@@ -1,20 +1,40 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# AETHER
 
-# Run and deploy your AI Studio app
+Premium multi-page frontend concept for a digital architecture/design studio.
 
-This contains everything you need to run your app locally.
+Live demo: [aether-coral.vercel.app](https://aether-coral.vercel.app/)
 
-View your app in AI Studio: https://ai.studio/apps/dd6d9aee-34b7-4d5b-9faa-7dcac7dbfe91
+## What This Project Includes
+
+- Multi-page React app with client-side routing
+- Motion-driven UI interactions and transitions
+- Reusable UI primitives and modular component structure
+- Responsive layout across key breakpoints
+- Form flows with validation
+
+## Tech Stack
+
+- React 19
+- TypeScript
+- Vite
+- Tailwind CSS v4
+- React Router
+- React Hook Form + Zod
+- Vitest + Testing Library
 
 ## Run Locally
 
-**Prerequisites:**  Node.js
+```bash
+npm install
+npm run dev
+```
 
+## Scripts
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+```bash
+npm run dev
+npm run build
+npm run preview
+npm run lint
+npm run test
+```
