@@ -7,7 +7,7 @@ const cases = [
     id: '01',
     title: 'Horizon Peak',
     category: 'Spatial Platform',
-    image: 'https://images.unsplash.com/photo-1541888086425-d81bb19240f5?q=80&w=2670&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1518005020951-eccb494ad742?q=80&w=2670&auto=format&fit=crop',
     description: 'A WebGL-powered data visualization tool for an international real estate firm, turning vast architectural datasets into explorable spatial maps.',
   },
   {
