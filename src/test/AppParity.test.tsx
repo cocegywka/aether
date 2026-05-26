@@ -10,7 +10,7 @@ function renderAt(pathname: string) {
 describe('App route parity', () => {
   it('renders home route content at /', () => {
     renderAt('/');
-    expect(screen.getByText(/WE CODE THE/i)).toBeInTheDocument();
+    expect(screen.getByText(/ARCHITECTING/i)).toBeInTheDocument();
   });
 
   it('renders studio route content at /studio', () => {
