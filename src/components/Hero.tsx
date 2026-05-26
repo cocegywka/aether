@@ -16,7 +16,7 @@ export function Hero() {
           </span>
         </div>
         <h1 className="mb-8 max-w-4xl font-sans text-[56px] font-bold leading-[0.9] tracking-tighter text-on-surface md:text-[96px] lg:text-[112px]">
-          ARCHITECTING <br /> DIGITAL <span className="text-primary italic">FRONTIERS.</span>
+          WE CODE THE <span className="text-primary italic">FUTURE.</span>
         </h1>
         <p className="max-w-2xl font-sans text-lg leading-relaxed text-on-surface-variant md:text-xl">
           We synthesize high-precision engineering with architectural aesthetics to deliver interfaces
