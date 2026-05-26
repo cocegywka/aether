@@ -68,7 +68,7 @@ export function Footer() {
               {legalItems.map((link) => (
                 <Link
                   key={link}
-                  to="#"
+                  to={`/${link.toLowerCase()}`}
                   className="font-sans text-sm tracking-wider text-on-surface-variant uppercase transition-colors hover:text-primary"
                 >
                   {link}
@@ -84,13 +84,13 @@ export function Footer() {
         </p>
         <div className="flex gap-8 md:hidden">
           <Link
-            to="#"
+            to="/privacy"
             className="font-mono text-[10px] uppercase tracking-widest text-on-surface-variant/50"
           >
             Privacy
           </Link>
           <Link
-            to="#"
+            to="/terms"
             className="font-mono text-[10px] uppercase tracking-widest text-on-surface-variant/50"
           >
             Terms

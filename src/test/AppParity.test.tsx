@@ -20,7 +20,7 @@ describe('App route parity', () => {
 
   it('renders expertise route content at /expertise', () => {
     renderAt('/expertise');
-    expect(screen.getByText('WHAT WE ENGINEER.')).toBeInTheDocument();
+    expect(screen.getByText(/ARCHITECTING/i)).toBeInTheDocument();
   });
 
   it('renders cases route content at /cases', () => {
@@ -36,6 +36,21 @@ describe('App route parity', () => {
   it('renders contact route content at /contact', () => {
     renderAt('/contact');
     expect(screen.getByText('START THE SEQUENCE.')).toBeInTheDocument();
+  });
+
+  it('renders dashboard route content at /dashboard', () => {
+    renderAt('/dashboard');
+    expect(screen.getByText(/WE CODE THE/i)).toBeInTheDocument();
+  });
+
+  it('renders privacy route content at /privacy', () => {
+    renderAt('/privacy');
+    expect(screen.getByText('PRIVACY POLICY')).toBeInTheDocument();
+  });
+
+  it('renders terms route content at /terms', () => {
+    renderAt('/terms');
+    expect(screen.getByText('TERMS OF SERVICE')).toBeInTheDocument();
   });
 
   it('renders not found content for unknown routes', () => {
